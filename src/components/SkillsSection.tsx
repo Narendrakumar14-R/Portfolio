@@ -89,7 +89,7 @@ const SkillsSection = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <span 
                     key={skill} 
-                    className="skill-badge"
+                    className="skill-badge text-primary"
                     style={{ animationDelay: `${(index * 100) + (skillIndex * 50)}ms` }}
                   >
                     {skill}
@@ -100,24 +100,6 @@ const SkillsSection = () => {
           ))}
         </div>
 
-        {/* Additional Certifications/Highlights */}
-        <div className="mt-16 text-center animate-fade-in">
-          <h3 className="text-2xl font-semibold mb-8 text-primary">Core Competencies</h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="card-portfolio">
-              <h4 className="font-semibold text-lg mb-2">Architecture</h4>
-              <p className="text-muted-foreground text-sm">Microservices, Event-Driven, Serverless</p>
-            </div>
-            <div className="card-portfolio">
-              <h4 className="font-semibold text-lg mb-2">Data Engineering</h4>
-              <p className="text-muted-foreground text-sm">ETL Pipelines, Data Lakes, Analytics</p>
-            </div>
-            <div className="card-portfolio">
-              <h4 className="font-semibold text-lg mb-2">Enterprise</h4>
-              <p className="text-muted-foreground text-sm">Scalability, Security, Performance</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

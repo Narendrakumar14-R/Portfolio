@@ -31,14 +31,6 @@ const HeroSection = () => {
             <Download size={20} className="mr-2 group-hover:animate-bounce" />
             Download Resume
           </button>
-          <button className="btn-hero-outline group">
-            <Github size={20} className="mr-2 group-hover:rotate-12 transition-transform" />
-            View GitHub
-          </button>
-          <button className="btn-hero-outline group">
-            <Mail size={20} className="mr-2 group-hover:scale-110 transition-transform" />
-            Contact Me
-          </button>
         </div>
         
         {/* Stats */}

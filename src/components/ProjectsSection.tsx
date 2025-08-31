@@ -17,38 +17,6 @@ const ProjectsSection = () => {
       icon: <Database className="text-primary" size={24} />,
       codeUrl: "#",
       demoUrl: "#"
-    },
-    {
-      title: "AWS ETL & Analytics Pipeline",
-      description: "Scalable data pipeline processing TB+ of data daily using S3, Glue, Lambda, Step Functions, and Athena with Power BI integration for real-time analytics dashboards.",
-      techStack: ["AWS S3", "AWS Glue", "AWS Lambda", "Step Functions", "Athena", "Power BI"],
-      icon: <Cloud className="text-primary" size={24} />,
-      codeUrl: "#",
-      demoUrl: "#"
-    },
-    {
-      title: "API Gateway & Service Discovery",
-      description: "Production-ready microservices starter kit with centralized configuration, distributed logging, health checks, and blue-green deployment strategies.",
-      techStack: ["Spring Cloud Gateway", "Config Server", "ELK Stack", "Jenkins", "Docker"],
-      icon: <Zap className="text-primary" size={24} />,
-      codeUrl: "#",
-      demoUrl: "#"
-    },
-    {
-      title: "Avocado Price Forecasting",
-      description: "Machine learning solution for commodity price prediction using ARIMA and XGBoost models with feature engineering and hyperparameter optimization.",
-      techStack: ["Python", "XGBoost", "ARIMA", "Pandas", "Scikit-learn", "Flask"],
-      icon: <Database className="text-primary" size={24} />,
-      codeUrl: "#",
-      demoUrl: "#"
-    },
-    {
-      title: "RL Tic-Tac-Toe Agent",
-      description: "Intelligent game agent implementing Q-Learning reinforcement learning algorithm with epsilon-greedy exploration and experience replay mechanisms.",
-      techStack: ["Python", "Q-Learning", "NumPy", "Matplotlib", "Jupyter"],
-      icon: <Bot className="text-primary" size={24} />,
-      codeUrl: "#",
-      demoUrl: "#"
     }
   ];
 
@@ -118,16 +86,6 @@ const ProjectsSection = () => {
           ))}
         </div>
 
-        {/* Additional CTA */}
-        <div className="text-center mt-16 animate-fade-in">
-          <p className="text-muted-foreground mb-6">
-            Want to see more projects or discuss a collaboration?
-          </p>
-          <button className="btn-hero-outline">
-            <Github size={20} className="mr-2" />
-            View All Projects on GitHub
-          </button>
-        </div>
       </div>
     </section>
   );
