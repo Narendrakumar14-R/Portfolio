@@ -1,5 +1,6 @@
 import { Download, Github, Mail } from 'lucide-react';
 import heroImage from '@/assets/hero-background.jpg';
+import profilePicture from '@/assets/profile-picture.jpg';
 
 const HeroSection = () => {
   return (
@@ -19,6 +20,14 @@ const HeroSection = () => {
         <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6 font-light">
           Senior Java Full-Stack & Data Engineer
         </h2>
+        
+        <div className="flex justify-center mb-6">
+          <img 
+            src={profilePicture} 
+            alt="Narendra Kumar Rayavarapu - Senior Java Full-Stack & Data Engineer" 
+            className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-primary/20 shadow-lg object-cover animate-scale-in"
+          />
+        </div>
         
         <p className="text-lg md:text-xl text-foreground mb-8 leading-relaxed max-w-3xl mx-auto">
           Building scalable microservices, enterprise-grade applications & cloud-native data pipelines. 
