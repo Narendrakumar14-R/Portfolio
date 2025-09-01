@@ -1,69 +1,43 @@
-import { Download, Github, Mail } from 'lucide-react';
-import heroImage from '@/assets/hero-background.jpg';
-import profilePicture from '@/assets/profile-picture.jpg';
+import { Download } from 'lucide-react';
+import profilePicture from '@/assets/profilepicture.jpeg';
 
 const HeroSection = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      />
-      
+    <section
+      id="home"
+      className="min-h-screen flex flex-col items-center justify-center px-6 text-center bg-black pt-28"
+    >
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-in">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
+        {/* Full Name in One Line */}
+        <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-blue-400 mb-4 whitespace-nowrap">
           Narendra Kumar Rayavarapu
         </h1>
-        
-        <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6 font-light">
-          Senior Java Full-Stack & Data Engineer
+
+        {/* Subtitle */}
+        <h2 className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 font-light">
+          Java Full-Stack Developer
         </h2>
-        
-        <div className="flex justify-center mb-6">
-          <img 
-            src={profilePicture} 
-            alt="Narendra Kumar Rayavarapu - Senior Java Full-Stack & Data Engineer" 
-            className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-primary/20 shadow-lg object-cover animate-scale-in"
-          />
-        </div>
-        
-        <p className="text-lg md:text-xl text-foreground mb-8 leading-relaxed max-w-3xl mx-auto">
-          Building scalable microservices, enterprise-grade applications & cloud-native data pipelines. 
-          8+ years of full-stack Java development with proven success across 
-          <span className="text-primary font-semibold"> PNC Bank, Delta Airlines, Albertsons, and UPS</span>.
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
-          <button className="btn-hero group">
-            <Download size={20} className="mr-2 group-hover:animate-bounce" />
-            Download Resume
-          </button>
-        </div>
-        
-        {/* Stats */}
-        <div className="flex flex-wrap justify-center gap-8 mt-12 animate-scale-in">
-          <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-primary">8+</div>
-            <div className="text-sm text-muted-foreground">Years Experience</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-primary">50+</div>
-            <div className="text-sm text-muted-foreground">Projects Delivered</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-primary">4</div>
-            <div className="text-sm text-muted-foreground">Enterprise Companies</div>
-          </div>
-        </div>
-      </div>
-      
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
-        </div>
+
+        {/* Profile Picture with Glow Ring */}
+       <div className="flex justify-center mb-6">
+  <div className="p-1 bg-black rounded-full animate-scale-in">
+    <img
+      src={profilePicture}
+      alt="Narendra Kumar Rayavarapu - Java Full-Stack Developer"
+      className="w-48 h-48 object-cover rounded-full shadow-lg mx-auto"
+    />
+  </div>
+</div>
+        {/* Description */}
+       <p className="text-base md:text-lg text-gray-200 mb-8 leading-relaxed max-w-3xl mx-auto">
+          I’m a passionate software developer who loves building modern, full-stack applications with 
+          <span className="text-blue-400 font-semibold"> Java, Spring Boot, MongoDB, React</span>, and AI tools.  
+          I’m driven to solve real-world problems through scalable and intelligent systems.  
+          Always eager to learn new technologies and contribute to impactful projects.   
+      </p>
+
+        {/* Download Resume Button */}
       </div>
     </section>
   );
