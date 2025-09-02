@@ -3,9 +3,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // ✅ This is the correct base for GitHub Pages when the repo name is Portfolio
+  // ✅ Must match your GitHub repo name exactly
   base: "/Portfolio/",
   server: {
     host: "::",
